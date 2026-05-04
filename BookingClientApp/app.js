@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://restaurantbookingsystem-production.up.railway.app';
 
 const form = document.getElementById('reservationForm');
 const message = document.getElementById('message');
