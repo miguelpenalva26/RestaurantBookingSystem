@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🍽️ Restaurant Booking System</h1>
+
+    <section class="card">
+      <h2>Make a Reservation</h2>
+
+      <form id="reservationForm" class="form">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <input type="number" id="guests" placeholder="Number of Guests" required>
+
+        <button type="submit" id="submitBtn" class="btn">Book Table</button>
+        <button type="button" id="cancelBtn" class="btn" onclick="cancelEdit()" style="display:none;">Cancel</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <div class="header">
+        <h2>Reservations</h2>
+        <button class="btn" onclick="loadReservations()">Refresh</button>
+      </div>
+
+      <ul id="reservationsList" class="list"></ul>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
