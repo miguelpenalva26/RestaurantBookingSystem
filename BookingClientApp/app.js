@@ -120,5 +120,5 @@ async function deleteReservation(id) {
     console.error("Error deleting reservation:", error);
   }
 }
-
+document.getElementById('date').min = new Date().toISOString().split('T')[0];
 loadReservations();
